@@ -55,7 +55,7 @@ gulp.task('styles', function() {
 		image: 'src/images'
 	}))
 	.pipe(autoprefixer('last 2 version', 'Safari', 'ie', 'opera', 'ios', 'android', 'chrome', 'firefox'))
-	.pipe(concat('flash-message.css'))
+	.pipe(concat('overlay-message.css'))
 	.pipe(rename({ suffix: '.min' }))
 	.pipe(minifycss())
 	.pipe(gulp.dest('dist'));
@@ -68,7 +68,7 @@ var scriptsToDo1 = [
 gulp.task('scripts1', function() {
 	return gulp.src(scriptsToDo1)
 	.pipe(plumber(plumberErrorHandler))
-	.pipe(uglify('flash-message.min.js', {outSourceMap: true}))
+	.pipe(uglify('overlay-message.min.js', {outSourceMap: true}))
 	.pipe(gulp.dest('dist'))
 });
 
