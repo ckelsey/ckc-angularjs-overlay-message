@@ -6,7 +6,7 @@
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/ckelsey/angularjs-overlay-message"
+    "url": "https://github.com/ckelsey/ckc-angularjs-overlay-message"
   },
   "keywords": [
     "Angularjs",
@@ -15,9 +15,9 @@
   "author": "Chris Kelsey",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ckelsey/angularjs-overlay-message/issues"
+    "url": "https://github.com/ckelsey/ckc-angularjs-overlay-message/issues"
   },
-  "homepage": "https://github.com/ckelsey/angularjs-overlay-message/blob/master/README.md",
+  "homepage": "https://github.com/ckelsey/ckc-angularjs-overlay-message/blob/master/README.md",
   "dependencies": {
     "bower": "^*",
     "gulp": "^*",
