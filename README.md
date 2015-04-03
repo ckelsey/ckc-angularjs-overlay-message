@@ -35,7 +35,7 @@ angular.module('st4rtApp',[
 * ___.close()___ - Closes the overlay message.
 
 ##Use
-* ___Bower___ - ckc-angular-overlay-message
+* ___Bower___ - ckc-angularjs-overlay-message
 * Add "overlay_message" to your app's dependencies
 * Add "overlay_message.js" and "overlay_message.css" to you scripts/css
 
