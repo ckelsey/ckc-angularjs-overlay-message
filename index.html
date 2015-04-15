@@ -1,0 +1,56 @@
+<!doctype html>
+<html ng-app="omApp">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/dist/overlay-message.min.css">
+
+	<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+	<base href="/" />
+</head>
+<body>
+	<div id="page_wrapper">
+		<form>
+			<div class="form-group">
+				<label>Class (".active" makes it appear)</label>
+				<input class="form-control" ng-model="om.class" type="text" style="display:block;" />
+			</div>
+			<div class="form-group">
+				<label>Time out</label>
+				<input class="form-control" ng-model="om.timeout" type="text" style="display:block;" />
+			</div>
+			<div class="form-group">
+				<label>Content</label>
+				<textarea class="form-control" ng-model="om.content" style="display:block;"></textarea>
+			</div>
+			<label style="display:block;">(Classes "error" makes it red and "warning" makes it orange)</label>
+			<br />
+			<button class="btn btn-primary" ng-click="overlay_message.set(om)">Try it</button>
+		</form>
+		<overlay-message></overlay-message>
+	</div>
+	<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="/bower_components/angular/angular.min.js"></script>
+	<script src="/bower_components/angular-resource/angular-resource.js"></script>
+	<script src="/bower_components/angular-cookies/angular-cookies.js"></script>
+	<script src="/bower_components/angular-sanitize/angular-sanitize.js"></script>
+	<script src="/bower_components/angular-route/angular-route.js"></script>
+	<script src="/bower_components/angular-loader/angular-loader.js"></script>
+	<script src="/bower_components/angular-animate/angular-animate.min.js"></script>
+	<script src="/dist/overlay-message.min.js"></script>
+    <script>
+		angular.module('omApp', [
+			'ngCookies',
+			'ngResource',
+			'ngSanitize',
+			'ngRoute',
+			'ngAnimate',
+			'overlaymessage'
+		]);
+    </script>
+</body>
+</html>

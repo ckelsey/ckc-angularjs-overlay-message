@@ -1,0 +1,45 @@
+<h1 id="ckc-angularjs-overlay-message">ckc-angularjs-overlay-message</h1>
+<p>An Angularjs module for overlay messages</p>
+<h3 id="example">Example</h3>
+<h4 id="html">HTML</h4>
+<pre><code class="lang-html">&lt;form ng-init=&quot;om={&#39;class&#39;:&#39;error active&#39;, &#39;timeout&#39;:5, &#39;content&#39;:&#39;&lt;b&gt;This&lt;/b&gt; is an overlay &lt;i&gt;message&lt;/i&gt;&#39;}&quot;&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;label&gt;Class (&quot;.active&quot; makes it appear)&lt;/label&gt;
+        &lt;input class=&quot;form-control&quot; ng-model=&quot;om.class&quot; type=&quot;text&quot; style=&quot;display:block;&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;label&gt;Time out&lt;/label&gt;
+        &lt;input class=&quot;form-control&quot; ng-model=&quot;om.timeout&quot; type=&quot;text&quot; style=&quot;display:block;&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;label&gt;Content&lt;/label&gt;
+        &lt;textarea class=&quot;form-control&quot; ng-model=&quot;om.content&quot; style=&quot;display:block;&quot;&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+    &lt;label style=&quot;display:block;&quot;&gt;(Classes &quot;error&quot; makes it red and &quot;warning&quot; makes it orange)&lt;/label&gt;
+    &lt;br /&gt;
+    &lt;button class=&quot;btn btn-primary&quot; ng-click=&quot;overlay_message.set(om)&quot;&gt;Try it&lt;/button&gt;
+&lt;/form&gt;
+&lt;overlay-message&gt;&lt;/overlay-message&gt;
+</code></pre>
+<h4 id="javascript">Javascript</h4>
+<pre><code class="lang-javascript">angular.module(&#39;st4rtApp&#39;,[
+    &#39;overlaymessage&#39;
+]);
+</code></pre>
+<h3 id="options">Options</h3>
+<ul>
+<li><strong><em>class</em></strong> - A class to add to the message container. &quot;active&quot; is what activates the message. A class with &quot;error&quot; is red and &quot;warning&quot; is orange.</li>
+<li><strong><em>timeout</em></strong> - Auto triggers the close function, integer in seconds.</li>
+<li><strong><em>content</em></strong> - The text content of the message.</li>
+</ul>
+<h3 id="methods">Methods</h3>
+<ul>
+<li><strong><em>.set(data)</em></strong> - &quot;data&quot; is the options above.</li>
+<li><strong><em>.close()</em></strong> - Closes the overlay message.</li>
+</ul>
+<h3 id="use">Use</h3>
+<ul>
+<li><strong><em>Bower</em></strong> - ckc-angularjs-overlay-message</li>
+<li>Add &quot;overlay_message&quot; to your app&#39;s dependencies</li>
+<li>Add &quot;overlay_message.min.js&quot; and &quot;overlay_message.min.css&quot; to you scripts/css</li>
+</ul>
